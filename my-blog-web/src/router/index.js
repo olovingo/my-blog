@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HomePage from '@/views/homePage/HomePage'
 import Notes from '@/views/notes/Notes'
+import NoteDetail from '@/views/notes/NoteDetail'
 
 Vue.use(Router)
 
@@ -17,6 +18,11 @@ export default new Router({
       path:'/notes',
       name:'Notes',
       component:Notes,
+    },
+    {
+      path:'/detail',
+      name:'NoteDetail',
+      component:NoteDetail
     }
   ]
 })
